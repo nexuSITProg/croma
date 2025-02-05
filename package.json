@@ -2,9 +2,10 @@
   "name": "jewerly",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://nexusitprog.github.io/croma/",
   "type": "module",
   "scripts": {
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
