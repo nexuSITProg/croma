@@ -10,35 +10,40 @@ import { Main } from './layout/Main/Main';
 
 import './index.scss';
 
-const router = createBrowserRouter([
-  { 
-    path: '/',
-    element: <App />,
-    errorElement: <ErrorPage />, 
-    children: [
-      {
-        path: '/',
-        element: <Main />
-      },
-      {
-        path: 'shop',
-        element: <></>
-      },
-      {
-        path: 'about',
-        element: <></>
-      },
-      {
-        path: 'contact',
-        element: <></>
-      },
-      {
-        path: 'collections',
-        element: <></>
-      }
-    ]
-  },
-]);
+const router = createBrowserRouter(
+  [
+    { 
+      path: '/',
+      element: <App />,
+      errorElement: <ErrorPage />, 
+      children: [
+        {
+          path: '/',
+          element: <Main />
+        },
+        {
+          path: 'shop',
+          element: <></>
+        },
+        {
+          path: 'about',
+          element: <></>
+        },
+        {
+          path: 'contact',
+          element: <></>
+        },
+        {
+          path: 'collections',
+          element: <></>
+        }
+      ]
+    },
+  ],
+  {
+    basename: '/croma'
+  }
+);
 
 const rootElement = document.getElementById('root');
 if (!rootElement) throw new Error('Failed to find the root element');
