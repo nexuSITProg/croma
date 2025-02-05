@@ -1,0 +1,68 @@
+@use 'sass:color';
+@import '../../index.scss';
+
+.btn {
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid var(--secondary1);
+  cursor: pointer;
+  user-select: none;
+  transition: all .2s linear;
+
+  &__img {
+    width: 24px;
+    height: 24px;
+    
+    & path {
+      transition: all .2s linear;
+    }
+
+    &__primary {
+      fill: var(--primary1);
+    }
+
+    &__secondary, &__ghost {
+      fill: var(--secondary1);
+    }
+  }
+
+  &__primary {
+    background-color: var(--secondary1);
+    color: var(--primary1);
+
+    &:hover {
+      background-color: color.adjust($color: $secondaryColor, $lightness: -10%);
+    }
+  }
+
+  &__secondary {
+    background: 0;
+    color: var(--secondary1);
+
+    &:hover {
+      background-color: var(--secondary1);
+      color: var(--primary1);
+
+      .btn__img__secondary {
+        fill: var(--primary1);
+      }
+    }
+  }
+
+  &__ghost {
+    border: 0;
+    background: 0;
+    color: var(--secondary1);
+
+    &:hover {
+      color: color.adjust($color: $secondaryColor, $lightness: -10%);
+
+      .btn__img__ghost {
+        fill: color.adjust($color: $secondaryColor, $lightness: -10%);
+      }
+    }
+  }
+}

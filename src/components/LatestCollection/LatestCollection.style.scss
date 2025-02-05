@@ -1,0 +1,78 @@
+.latest-collection {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+  overflow: hidden; // Важно для предотвращения горизонтального скролла всей страницы
+
+  & h3 {
+    text-align: center;
+    padding: 0 20px;
+  }
+}
+
+.scroll-section {
+  &__outer {
+    width: 100%;
+    padding-left: 65px; // Отступ слева
+  }
+
+  &__track {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    cursor: grab;
+    margin-left: -65px; // Компенсируем padding контейнера
+    width: calc(100% + 65px); // Расширяем трек
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-left: 65px; // Возвращаем отступ для контента
+    
+    &:active {
+      cursor: grabbing;
+    }
+    
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+// Стили для карточки внутри трека
+.scroll-section__track .product-card {
+  flex: 0 0 280px; // Фиксированная ширина карточки
+  user-select: none;
+
+  &:last-child {
+    margin-right: 65px; // Отступ после последнего элемента
+  }
+}
+
+@media (max-width: 1040px) {
+  .latest-collection {
+    gap: 30px;
+  }
+
+  .scroll-section {
+    &__outer {
+      padding-left: 20px;
+    }
+
+    &__track {
+      margin-left: -20px;
+      width: calc(100% + 20px); // Расширяем трек
+      padding-left: 20px; // Возвращаем отступ для контента
+    }
+  }
+
+  .scroll-section__track .product-card {
+    & img {
+      height: 280px;
+    }
+
+    &:last-child {
+      margin-right: 20px; // Отступ после последнего элемента
+    }
+  }
+}

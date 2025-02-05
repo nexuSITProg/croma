@@ -1,0 +1,44 @@
+.question {
+  &__question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__img {
+    cursor: pointer;
+    user-select: none;
+    margin-left: 20px;
+  }
+
+  &__separator {
+    color: var(--primary2);
+  }
+
+  & h5 {
+    cursor: pointer;
+  }
+}
+
+.answer {
+  & p {
+    color: var(--black3);
+  }
+}
+
+@media (max-width: 580px) {
+  .question {
+    &__question {
+      & h5 {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .answer {
+    & .p-second {
+      font-size: 14px;
+    }
+  }
+}

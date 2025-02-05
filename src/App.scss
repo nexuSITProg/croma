@@ -1,0 +1,117 @@
+.app {
+  background-color: var(--primary1);
+}
+
+.wrapper {
+  padding: 0 65px;
+}
+
+input, ::placeholder {
+  font-family: 'Archivo';
+  font-size: 16px;
+  color: var(--black3);
+  outline: none;
+}
+
+button {
+  font-family: 'Archivo';
+  font-size: 20px;
+  outline: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  line-height: 120%;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 96px;
+  color: var(--primary1);
+}
+
+h3 {
+  font-size: 64px;
+}
+
+h4 {
+  font-size: 40px;
+}
+
+h5 {
+  font-size: 32px;
+}
+
+h6 {
+  font-size: 24px;
+}
+
+p, span {
+  font-family: 'Open Sans', sans-serif, serif;
+  margin: 0;
+  line-height: 150%;
+}
+
+.p-first {
+  font-size: 24px;
+}
+
+.p-second {
+  font-size: 20px;
+  word-spacing: -1%;
+}
+
+.p-third {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 1040px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+
+  h1 {
+    font-size: 64px;
+  }
+
+  h3 {
+    font-size: 48px;
+  }
+
+  h4 {
+    font-size: 32px;
+  }
+
+  h5 {
+    font-size: 24px;
+  }
+
+  h6 {
+    font-size: 18px;
+  }
+
+  .p-first {
+    font-size: 20px;
+  }
+
+  .p-second {
+    font-size: 18px;
+  }
+
+  .p-third {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 580px) {
+  h3 {
+    font-size: 36px;
+  }
+
+  h4 {
+    font-size: 28px;
+  }
+}

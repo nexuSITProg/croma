@@ -1,0 +1,17 @@
+.nav__item {
+  text-transform: uppercase;
+  color: var(--black3);
+
+  &__link {
+    transition: all .2s linear;
+    color: var(--black3);
+
+    &:hover {
+      color: var(--accent);
+    }
+    
+    &--active {
+      color: var(--accent);
+    }
+  }
+}

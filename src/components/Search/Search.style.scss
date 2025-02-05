@@ -1,0 +1,27 @@
+.search {
+  display: flex;
+  padding: 16px;
+  border-radius: 35px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary2);
+  max-width: 20%;
+  color: var(--black3);
+  order: 2;
+
+  &__input {
+    width: 80%;
+    border: 0;
+    background: 0;
+  }
+
+  &__icon {
+    cursor: pointer;
+    user-select: none;
+    order: 2;
+  }
+
+  @media (max-width: 1040px) {
+    max-width: 25%;  
+  }
+}

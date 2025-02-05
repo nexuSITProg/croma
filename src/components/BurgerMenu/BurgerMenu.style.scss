@@ -1,0 +1,21 @@
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  border: 0;
+  background: 0;
+  cursor: pointer;
+  user-select: none;
+
+  &__separator {
+    width: 30px;
+    height: 3px;
+    background: black;
+  }
+}
+
+@media (max-width: 1040px) {
+  .burger-menu {
+    display: flex;
+  }
+}

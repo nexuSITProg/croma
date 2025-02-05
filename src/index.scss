@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+$secondaryColor: #888F65;
+
+:root {
+  // Primary
+  --primary1: #F5F0EC;
+  --primary2: #EBE5E1;
+  // Secondary
+  --secondary1: #888F65;
+  --secondary2: #989C87;
+  // Accent
+  --accent: #BC955A;
+  // Black
+  --black1: #1E1E1E;
+  --black2: #2D2D2D;
+  --black3: #585858;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Archivo', sans-serif, serif;
+}
+
+@media (max-width: 1040px) {
+  
+}
